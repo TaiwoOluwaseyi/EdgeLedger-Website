@@ -52,6 +52,7 @@
     text-align: center;
     justify-content:center;
     height: 100%;
+    text-align: center;
 }
 
 .flex-items > div {
@@ -132,7 +133,10 @@ width: 100%;
 flex: 25%;
 max-width: 25%;
 padding: 0 4px;
+}
 
+.flex-columns .flex-reverse .row {
+    flex-direction: row-reverse;
 }
 
 
