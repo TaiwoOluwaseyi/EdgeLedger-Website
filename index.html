@@ -82,6 +82,7 @@
             </div>
         </section>
 
+        <!-- cases -->
         <section id="cases" class="cases flex-grid section-padding">
             <header class="section-header">
                 <h4>This Is What We Do</h4>
@@ -209,7 +210,9 @@
     </footer>
 
      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        const nav = document.getElementById('navbar');
+
+     <script>
+             const navbar = document.getElementById('navbar');
         let scrolled = false;
 
         window.onscroll = function() {
@@ -227,26 +230,22 @@
                 scrolled = false;
             }
         }
+
+        // Smooth scrolling 
+        $('#navbar a, .btn').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                         scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

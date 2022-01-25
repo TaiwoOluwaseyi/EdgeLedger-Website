@@ -68,7 +68,7 @@ width: 100%;
 
 .flex-columns .column {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis:100%;
     flex: 1;
 } 
@@ -123,13 +123,13 @@ width: 100%;
    padding: 20px 20px 40px; 
 }
 
-.flex-grid.row {
+.flex-grid .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
-.flex-grid.column {
+.flex-grid .column {
 flex: 25%;
 max-width: 25%;
 padding: 0 4px;
