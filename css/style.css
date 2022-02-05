@@ -69,7 +69,7 @@ img {
     display: flex;
 }
 
-.navbar logo {
+.navbar .logo {
      font-weight: 400;
 }
 
@@ -179,6 +179,10 @@ img {
     outline-color: #28a745;
 }
 
+.column-2 .bg-light {
+width: 100%;
+}
+
 /* post */ 
 
 .post {
@@ -212,13 +216,10 @@ img {
     justify-content: center;
     text-align: center;
     height: 200;
+    padding-top: 2rem;
 }
 .footer a {
     color: #fff;
-}
-
-.footer .social > *{
-    margin-right: 30px;
 }
 
 .footer a:hover {
